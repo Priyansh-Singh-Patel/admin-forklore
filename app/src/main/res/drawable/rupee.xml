@@ -1,0 +1,24 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Outer Circle -->
+    <path
+        android:strokeColor="#8BC34A"
+        android:strokeWidth="1.7"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M22,12A10,10 0 1,1 2,12A10,10 0 1,1 22,12Z" />
+
+    <!-- Clean and simple ₹ symbol -->
+    <path
+        android:strokeColor="#8BC34A"
+        android:strokeWidth="1.7"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M8,7H16 M8,10H15.5 M11,7C13,10.5 12.5,14 8,13 L13,18" />
+</vector>
