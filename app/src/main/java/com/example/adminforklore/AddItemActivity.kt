@@ -1,5 +1,6 @@
 package com.example.adminforklore
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.PickVisualMediaRequest
@@ -26,6 +27,10 @@ class AddItemActivity : AppCompatActivity() {
 
         binding.selectImage.setOnClickListener {
             pickImage.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
+        }
+
+        binding.backButton.setOnClickListener {
+            finish()
         }
     }
     val pickImage = registerForActivityResult(ActivityResultContracts.PickVisualMedia()){ uri ->
