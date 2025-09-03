@@ -36,6 +36,10 @@ class AllItemActivity : AppCompatActivity() {
             R.drawable.menu1
         )
 
+        binding.backButton.setOnClickListener {
+            finish()
+        }
+
         val adapter = AddItemAdapter(ArrayList(menuFoodName), ArrayList(menuItemPrice), ArrayList(menuImage))
         binding.menuRecyclerView.layoutManager = LinearLayoutManager(this)
         binding.menuRecyclerView.adapter = adapter
