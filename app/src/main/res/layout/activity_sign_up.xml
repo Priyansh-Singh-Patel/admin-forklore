@@ -80,7 +80,7 @@
         android:ems="10"
         android:fontFamily="@font/lato_regular"
         android:hint="Email"
-        android:inputType="textPassword"
+        android:inputType="textEmailAddress"
         android:paddingLeft="15dp"
         app:layout_constraintEnd_toEndOf="@+id/restaurantName"
         app:layout_constraintHorizontal_bias="1.0"
@@ -99,7 +99,7 @@
         android:ems="10"
         android:fontFamily="@font/lato_regular"
         android:hint="Name of Restaurant"
-        android:inputType="textEmailAddress"
+        android:inputType="text"
         android:paddingLeft="15dp"
         app:layout_constraintEnd_toEndOf="@+id/name"
         app:layout_constraintHorizontal_bias="1.0"
@@ -175,7 +175,7 @@
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/createAccountButton"
+        android:id="@+id/createUserButton"
         android:layout_width="160dp"
         android:layout_height="57dp"
         android:layout_marginTop="16dp"
@@ -198,8 +198,8 @@
         android:text="Already Have An Account"
         android:textColor="@color/textColor"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/createAccountButton"
-        app:layout_constraintStart_toStartOf="@+id/createAccountButton"
-        app:layout_constraintTop_toBottomOf="@+id/createAccountButton" />
+        app:layout_constraintEnd_toEndOf="@+id/createUserButton"
+        app:layout_constraintStart_toStartOf="@+id/createUserButton"
+        app:layout_constraintTop_toBottomOf="@+id/createUserButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
