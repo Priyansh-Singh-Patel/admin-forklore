@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "823955647849",
+    "firebase_url": "https://forklore-3e493-default-rtdb.firebaseio.com",
+    "project_id": "forklore-3e493",
+    "storage_bucket": "forklore-3e493.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823955647849:android:5d697186c26254c20161f8",
+        "android_client_info": {
+          "package_name": "com.example.adminforklore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823955647849-evi9s04t85j89bp33vnnkjt2rrt6gr63.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.adminforklore",
+            "certificate_hash": "cb3fd0ea226a82ab34a7d37bba14d1a9f257a6ee"
+          }
+        },
+        {
+          "client_id": "823955647849-ksidao6drtscpvs1c2hkr9vd4eu5domo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGTYSZU5SiGI_o6Jg4gpwhlpMha6zIhts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823955647849-ksidao6drtscpvs1c2hkr9vd4eu5domo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
