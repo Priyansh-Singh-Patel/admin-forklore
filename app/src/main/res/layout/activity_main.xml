@@ -22,7 +22,6 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
         android:fontFamily="@font/lato_bold"
         android:text="Forklore"
         android:textColor="@color/black"
@@ -74,12 +73,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/attention"
-                app:layout_constraintEnd_toEndOf="@+id/textView9"
-                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintEnd_toEndOf="@+id/pendingOrderTextView"
+                app:layout_constraintStart_toStartOf="@+id/pendingOrderTextView"
                 app:layout_constraintTop_toTopOf="@+id/guideline" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/pendingOrderTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -98,9 +97,9 @@
                 android:text="30"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="@+id/textView9"
+                app:layout_constraintEnd_toEndOf="@+id/pendingOrderTextView"
                 app:layout_constraintStart_toStartOf="@+id/guideline2"
-                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+                app:layout_constraintTop_toBottomOf="@+id/pendingOrderTextView" />
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -123,7 +122,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/textColor"
                 app:layout_constraintEnd_toStartOf="@+id/textView13"
-                app:layout_constraintStart_toEndOf="@+id/textView9"
+                app:layout_constraintStart_toEndOf="@+id/pendingOrderTextView"
                 app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
             <TextView
@@ -266,6 +265,7 @@
         app:layout_constraintStart_toStartOf="@+id/cardView2"
         app:layout_constraintTop_toBottomOf="@+id/cardView2">
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/profile"
             android:layout_width="match_parent"
             android:background="@drawable/greencard"
             android:layout_height="match_parent">>
@@ -304,6 +304,7 @@
         app:layout_constraintStart_toEndOf="@+id/cardView3"
         app:layout_constraintTop_toTopOf="@+id/cardView3">
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/createUser"
             android:layout_width="match_parent"
             android:background="@drawable/greencard"
             android:layout_height="match_parent">>
