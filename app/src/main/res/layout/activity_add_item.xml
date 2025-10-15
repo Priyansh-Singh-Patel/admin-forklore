@@ -165,7 +165,7 @@
                 android:fontFamily="@font/lato_bold"
                 android:gravity="center_vertical"
                 android:paddingLeft="15dp"
-                android:text="Ingredients"
+                android:text="Ingredient"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/description"
