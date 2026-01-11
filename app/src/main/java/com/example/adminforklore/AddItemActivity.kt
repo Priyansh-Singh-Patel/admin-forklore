@@ -3,6 +3,7 @@ package com.example.adminforklore
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
@@ -47,6 +48,18 @@ class AddItemActivity : AppCompatActivity() {
         binding.AddItemButton.setOnClickListener {
             //Get data from the activity
             //you left here start here
+            foodName = binding.foodName.text.toString().trim()
+            foodPrice = binding.foodPrice.text.toString().trim()
+            foodDescription = binding.description.text.toString().trim()
+            foodIngredients = binding.ingredient.text.toString().trim()
+
+            if (!(foodName.isBlank() || foodPrice.isBlank() || foodDescription.isBlank() || foodIngredients.isBlank())) {
+                uploadData()
+                Toast.makeText(this,"Item Added Successfully", Toast.LENGTH_SHORT).show()
+                finish()
+            } else {
+                Toast.makeText(this, "Fill all the details", Toast.LENGTH_SHORT).show()
+            }
         }
 
         binding.selectImage.setOnClickListener {
@@ -57,9 +70,15 @@ class AddItemActivity : AppCompatActivity() {
             finish()
         }
     }
+
+    private fun uploadData() {
+
+    }
+
     val pickImage = registerForActivityResult(ActivityResultContracts.PickVisualMedia()){ uri ->
         if (uri != null) {
             binding.selectedImage.setImageURI(uri)
         }
     }
 }
+
